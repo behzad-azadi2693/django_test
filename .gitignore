@@ -1,0 +1,5 @@
+__pycache__/
+00*.py
+db.sqlite3
+coverage
+sbenv

@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+
+{% for book in books %}
+    {{ book.pk }}
+    <p>{{ book.name }}</p>
+    <p>{{ book.pricce }}
+    <hr>
+{% endfor %}
+
+<select id="reply" data-id='1' name="cars" id="cars">
+  <option value="volvo">high to low</option>
+  <option value="saab">low to high</option>
+</select>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{% static 'js/ajax.js' %}"></script>
+
+</body>
+
+</html>
